@@ -83,66 +83,45 @@
 
       <div id="projects" class="projects">
         <div class="project">
-          <div class="project-details">
-            <img
-              class="project-icon"
-              src="./images/shopify-icon.png"
-              alt="shopify icon"
-            />
-            <h3>Shopify</h3>
+          <div class="project-details">           
+            <h3>Gallery App</h3>
             <p>
-              Use one platform to sell products to anyone, anywhere in person
-              with Point of Sale and online through your website, social media,
-              and online marketplaces.
+              Gallery App is a single page image library app built with react. Pixabay's API was used for fetching data and images based on user's query. Basic functionality include not displaying images when users inputs an invalid query.
             </p>
-            <a href="#"
+            <a href="https://gallery-image-store.netlify.app/"
               >Visit website <img src="./images/forward-arrow.png" alt=""
             /></a>
           </div>
           <div class="project-image">
-            <img src="./images/shopify.png" alt="" />
+            <img src="./images/project-3.png" alt="gallery app homepage" />
           </div>
         </div>
         <div class="project">
-          <div class="project-details">
-            <img
-              class="project-icon"
-              src="./images/linkedin-main.png"
-              alt="linkedin icon"
-            />
-            <h3>LinkedIn</h3>
+          <div class="project-details">            
+            <h3>CartZilla</h3>
             <p>
-              LinkedIn is the world's largest professional network on the
-              internet. You can use LinkedIn to find the right job or
-              internship, connect and strengthen professional relationships.
+              CartZilla is a food ordering and delivery app built using SCSS and vanilla JavaScript. It is fully responsive, mixins and varaibles were used for implementing responsiveness which made translating the design into codes a bit more creative.
             </p>
-            <a href="#"
+            <a href="https://ricocart.netlify.app/dist"
               >Visit website <img src="./images/forward-arrow.png" alt=""
             /></a>
           </div>
           <div class="project-image">
-            <img src="./images/linkedin.png" alt="" />
+            <img src="./images/project-1.png" alt="" />
           </div>
         </div>
         <div class="project">
-          <div class="project-details">
-            <img
-              class="project-icon"
-              src="./images/uber-icon.png"
-              alt="uber icon"
-            />
-            <h3>Uber</h3>
+          <div class="project-details">           
+            <h3>TinDog</h3>
             <p>
-              Uber is a transportation company with an app that allows
-              passengers to hail a ride and drivers to charge fares and get
-              paid.
+              TinDog is a fictional social media app for dogs. Bootstrap was used primarily for layout, navigation and responsiveness. 
             </p>
-            <a href="#"
+            <a href="https://kenneth-okoro.github.io/TinDog/"
               >Visit website <img src="./images/forward-arrow.png" alt=""
             /></a>
           </div>
           <div class="project-image">
-            <img src="./images/uber.png" alt="" />
+            <img src="./images/project-2.png" alt="" />
           </div>
         </div>
       </div>
@@ -168,7 +147,9 @@
             working diligently to achieve results the smart way.
           </p>
         </div>
-        <div class="about-image"></div>
+        <div class="about-image">
+          <img class="about-pic" src="./images/iamkeo.jpg" alt="Kenneth smiling" srcset="">
+        </div>
       </div>
 
       <div class="heading">
@@ -195,12 +176,12 @@
         <div class="contact-form">
           <p>Fill in the form to contact me</p>
           <form class="input-group">
-            <label>What’s your name?</label>
-            <input class="input-field" type="text" />
-            <label>Your email address</label>
-            <input class="input-field" type="email" />
-            <label>Tell me about the project</label>
-            <textarea></textarea>
+            <label for="name">What’s your name?</label>
+            <input id="name" class="input-field" type="text" required/>
+            <label for="email">Your email address</label>
+            <input id="email" class="input-field" type="email" required/>
+            <label for="message">Tell me about the project</label>
+            <textarea id="message"></textarea>
           </form>
           <button class="btn btn-submit" type="submit">Send message</button>
         </div>
@@ -214,7 +195,7 @@
       </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>        
     <script src="index.js"></script>
   </body>
 </html>

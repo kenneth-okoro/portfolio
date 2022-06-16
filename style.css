@@ -43,6 +43,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .btn {
   height: 56px;
   width: 187px;
@@ -73,7 +77,7 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: var(--primary-color);
+  background-color: #000;
 }
 
 /* basic style for other elements */
@@ -88,11 +92,11 @@ a {
 }
 
 .nav-link {
- text-decoration: none;
- color: var(--primary-color);
- font-size: 16px;
- font-weight: 500;
- line-height: 32px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
 }
 
 .nav-link:hover {
@@ -120,9 +124,9 @@ a {
 }
 
 .logo-heading {
- font-size: 16px;
- font-weight: 500;
- line-height: 32px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
 }
 
 /* profile */
@@ -224,12 +228,21 @@ a.btn-hire {
   display: flex;
   justify-content: space-between;
   padding: 40px 48px 30px;
-  margin-bottom: 56px;
+  margin-bottom: 56px;  
 }
 
 .project-details {
+  width: 50%;
+}
+
+.project-image {
   width: 40%;
 }
+
+.project-image img {
+  border-radius: 10px;
+}
+
 
 .project-icon {
   margin-bottom: 16px;
@@ -300,6 +313,10 @@ a.btn-projects {
   border-radius: 50%;
 }
 
+.about-pic {
+  border-radius: 50%;
+}
+
 /* Contact */
 .contact {
   display: flex;
@@ -319,7 +336,7 @@ a.btn-projects {
 }
 
 .contact-details p a {
- color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .contact-form p {
@@ -409,7 +426,7 @@ footer {
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     z-index: 1;
-    opacity: .9;
+    opacity: 0.9;
   }
 
   .nav-menu.active {
@@ -475,7 +492,7 @@ footer {
     flex-direction: column-reverse;
   }
   .project-details,
-  .project-image img {
+  .project-image {
     width: 100%;
   }
   .project-details {
