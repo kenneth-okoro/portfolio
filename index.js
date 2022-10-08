@@ -3,6 +3,19 @@ const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const navLink = document.querySelectorAll('.nav-link');
 
+function sendMail() {
+  let params = {
+    from_name: document.getElementById('name').value,
+    email_id: document.getElementById('email_id').value,
+    message: document.getElementById('message').value,
+  };
+  emailjs
+    .send('service_co3k9on', 'template_87vnta7', params)
+    .then(function (res) {
+      alert('Sent');
+    });
+}
+
 icon.addEventListener('click', toggleMode);
 
 function toggleMode() {
